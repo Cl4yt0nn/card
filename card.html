@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: 'Quicksand', sans-serif;
+        transition:1s;
+    }
+    #bg {
+        width:50vw;
+        height:50vh;
+        margin-top:20vh;
+        margin-left:25vw;
+        background:linear-gradient(to top right, #e32e7c, #822ee3);
+        border-radius:30px;
+    }
+    #capMarvel {
+        position:absolute;
+        width:28vw;
+        height:55vh;
+        top:15vh;
+        left:36vw;
+        z-index:2;
+    }
+    #lorem {
+        color:white;
+        width:25vw;
+        height:40vh;
+        position:absolute;
+        z-index:1;
+        top:20vh;
+        left:35vw;
+        font-size:30px;
+        opacity:0%;
+    }
+    #readmore {
+        width:10vw;
+        height:6vh;
+        background:white;
+        border-radius:5px;
+        font-size:22.5px;
+        position:absolute;
+        left:35vw;
+        top:57.5vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        z-index:1;
+        opacity:0%;
+    }
+    #container:hover #capMarvel {
+        left:50vw;
+    }
+    #container:hover #lorem {
+        opacity:100%;
+        left:27.5vw;
+    }
+    #container:hover #readmore {
+        opacity:100%;
+        left:27.5vw;
+    }
+    #readmore:hover {
+        cursor:pointer;
+        background:#aaaaaa;
+        transition:0s;
+    }
+    #container {
+        width:0vw;
+        height:0vh;
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="bg"></div>
+        <img src="./card.png" id="capMarvel">
+        <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aut repudiandae cupiditate repellendus, obcaecati consequuntur minima porro.</p>
+        <div id="readmore" onclick="location.href = 'https://i.ytimg.com/vi/re-aSHimmU0/maxresdefault.jpg'">Read More...</div>
+    </div>
+</body>
+</html>
